@@ -11,6 +11,8 @@ namespace Bloxstrap.UI.ViewModels.ContextMenu
 
         public string InstanceId => _activityWatcher.Data.JobId;
 
+        public string MachineAddress => _activityWatcher.Data.MachineAddress;
+
         public string ServerType => _activityWatcher.Data.ServerType.ToTranslatedString();
 
         public string ServerLocation { get; private set; } = Strings.Common_Loading;
